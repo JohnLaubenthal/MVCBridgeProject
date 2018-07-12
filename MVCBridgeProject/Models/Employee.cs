@@ -6,15 +6,16 @@ using System.Web;
 
 namespace MVCBridgeProject.Models
 {
-    public class Customer
+    public class Employee
     {
         [Key]
         public int ID { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public int PhoneNumber { get; set; }
-        public string FavoriteDrink { get; set; }
-        public string FavoriteMeal { get; set; }
-        public double LargestBill { get; set; }
+        public int EmployeeNumber { get; set; }
+        public string EmergencyContactName { get; set; }
+        public int EmergencyContactNumber{ get; set; }
+        public int StartDate { get; set; }
     }
 }
