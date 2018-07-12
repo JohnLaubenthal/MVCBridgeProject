@@ -10,8 +10,8 @@ namespace MVCBridgeProject.Models
     {
         [Key]
         public int MenuID { get; set; }
-        public int ItemNumber { get; set; }
-        public string ItemName { get; set; }
-        public double ItemPrice { get; set; }
+        public int Item { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
     }
 }

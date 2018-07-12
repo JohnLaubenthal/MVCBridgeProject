@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -17,8 +18,7 @@ namespace MVCBridgeProject.Models
         public int ZipCode { get; set; }
 
 
-
-        [System.ComponentModel.DataAnnotations.Schema.ForeignKey("Customer")]
+        [ForeignKey("Customer")]
         public int CustomerID { get; set; }
         public virtual Customer Customer { get; set; }
     }
