@@ -9,13 +9,13 @@ namespace MVCBridgeProject.Models
     public class Employee
     {
         [Key]
-        public int ID { get; set; }
+        public int EmployeeID { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public int PhoneNumber { get; set; }
         public int EmployeeNumber { get; set; }
         public string EmergencyContactName { get; set; }
         public int EmergencyContactNumber{ get; set; }
-        public int StartDate { get; set; }
+        public DateTime PublishedDate { get; set; }
     }
 }

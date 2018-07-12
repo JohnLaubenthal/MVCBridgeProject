@@ -9,11 +9,17 @@ namespace MVCBridgeProject.Models
     public class Address
     {
         [Key]
-        public int ID { get; set; }
+        public int AddressID { get; set; }
         public int StreetAddress { get; set; }
         public string StreetName { get; set; }
         public string City { get; set; }
         public string State { get; set; }
         public int ZipCode { get; set; }
+
+
+
+        [System.ComponentModel.DataAnnotations.Schema.ForeignKey("Customer")]
+        public int CustomerID { get; set; }
+        public virtual Customer Customer { get; set; }
     }
 }
